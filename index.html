@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>报价单</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, "Microsoft YaHei", sans-serif;
+    background: #f5f5f5;
+    padding: 20px;
+    color: #333;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+  h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #222;
+  }
+  .date {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 20px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  th, td {
+    border: 1px solid #e0e0e0;
+    padding: 10px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th {
+    background: #f8f8f8;
+    font-weight: 600;
+    color: #555;
+    white-space: nowrap;
+  }
+  td.num {
+    text-align: right;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+  }
+  tr.total td {
+    background: #fafafa;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .remark {
+    margin-top: 16px;
+    font-size: 12px;
+    color: #999;
+    line-height: 1.6;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>报价单</h2>
+  <div class="date">日期：2026-10-22</div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>序号</th>
+        <th>产品名称</th>
+        <th>规格型号</th>
+        <th>数量</th>
+        <th>单位</th>
+        <th>单价(元)</th>
+        <th>金额(元)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>干体式温度校验炉<br><small style="color:#888">船用温度校准器 33-650℃</small></td>
+        <td>TMC-650<br>220V 35°C~650°C</td>
+        <td>1</td>
+        <td>台</td>
+        <td class="num">7,100.00</td>
+        <td class="num">7,100.00</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>手钳式压力校准仪 气压款<br><small style="color:#888">压力校准器 0.9-60bar</small></td>
+        <td>HW-60<br>-0.95Bar-60Bar</td>
+        <td>1</td>
+        <td>台</td>
+        <td class="num">4,960.00</td>
+        <td class="num">4,960.00</td>
+      </tr>
+      <tr class="total">
+        <td colspan="6" style="text-align:right">合计：</td>
+        <td class="num">12,060.00</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="remark">
+    备注：以上价格含税；标配含主机+转接头+O型圈+硬壳箱。<br>
+    交期、付款方式请另行沟通。
+  </div>
+</div>
+</body>
+</html>
